@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1>ex1</h1>
+
+    <script>
+        let tranzactie1=true;
+        let tranzactie2=false;
+        let myAge = 20;
+        let studyYear = 3;
+        let myHobby = "ciprian cremos";
+	
+        let a=15, b=4, c=12;
+	
+	if(a>b){
+		if(a>c){
+			
+			//console.log(a);
+			if(b>c){
+				console.log(`${a} ${b} ${c}`);
+			}
+			else{
+				console.log(`${a} ${c} ${b}`);
+			}
+		}
+		else{
+			console.log(`${c} ${a} ${b}`);
+		}
+	}
+	else{
+		if(b<c){
+			console.log(`${c} ${b} ${a}`);
+		}
+		else{
+			if(a<c) console.log(`${b} ${c} ${a}`);
+			else console.log(`${b} ${a} ${c}`);
+		}
+	}
+	
+    </script>
+</body>
+</html>
