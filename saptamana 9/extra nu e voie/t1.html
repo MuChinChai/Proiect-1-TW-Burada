@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <title>Magazin Karturi și Tancuri</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9fafb;
+      margin: 0;
+      padding: 0;
+      color: #222;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px 30px;
+    }
+
+    header {
+      background-color: #1f2937; /* gri-închis */
+      color: white;
+      padding: 20px 0;
+    }
+
+    header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+      letter-spacing: 2px;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #3b82f6; /* albastru accent */
+      text-decoration: underline;
+    }
+
+    section {
+      background-color: white;
+      padding: 30px 40px;
+      margin-top: 30px;
+      border-radius: 8px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    }
+
+    section h2 {
+      margin-top: 0;
+      margin-bottom: 25px;
+      color: #1e293b;
+      /*border-bottom: 3px solid #3b82f6;*/ /* albastru accent */
+      padding-bottom: 8px;
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    .products {
+      display: flex;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    .product-card {
+      background-color: #f3f4f6;
+      padding: 20px;
+      border-radius: 8px;
+      flex: 1 1 280px;
+      box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+      transition: box-shadow 0.3s, transform 0.3s;
+    }
+
+    .product-card:hover {
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+      transform: translateY(-5px);
+    }
+
+    .product-card h3 {
+      margin-top: 0;
+      margin-bottom: 12px;
+      color: #2563eb; /* albastru */
+      font-size: 20px;
+    }
+
+    .product-card p {
+      margin: 0;
+      font-size: 15px;
+      color: #4b5563;
+      line-height: 1.4;
+    }
+
+    footer {
+      margin-top: 50px;
+      padding: 20px 0;
+      text-align: center;
+      font-size: 14px;
+      color: #6b7280;
+      border-top: 1px solid #e5e7eb;
+    }
+
+    /* Responsive */
+    @media (max-width: 700px) {
+      .products {
+        flex-direction: column;
+      }
+      nav {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>Kart & Tank Shop</h1>
+      <nav>
+        <a href="#karturi">Karturi</a>
+        <a href="#tancuri">Tancuri</a>
+        <a href="#despre">Despre noi</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <section id="karturi">
+      <h2>Karturi populare</h2>
+      <div class="products">
+        <div class="product-card">
+          <h3>Kart Sport 250cc</h3>
+          <p>Viteză, control și distracție pentru toate vârstele.</p>
+        </div>
+        <div class="product-card">
+          <h3>Kart Electric Urban</h3>
+          <p>Silentios, ecologic și perfect pentru începători.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="tancuri">
+      <h2>Tancuri pentru colecționari</h2>
+      <div class="products">
+        <div class="product-card">
+          <h3>Tanc T 34 85 1:16</h3>
+          <p>Radiocomandă, sunete și mișcare realistă.</p>
+        </div>
+        <div class="product-card">
+          <h3>Tanc Panzerkampfwagen VI Tiger</h3>
+          <p>Trage bile și are turela rotativă 360°.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="despre">
+      <h2>Despre noi</h2>
+      <p>Suntem pasionați de suspensii, roti si tancuri. Importăm și vindem karturi și tancuri de calitate pentru pasionați, profesioniști și colecționari.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: contact@karttanks.ro</p>
+      <p>Telefon: 0723 123 456</p>
+    </section>
+
+  </div>
+
+  <footer>
+    © 2025 Kart & Tank Shop
+  </footer>
+
+</body>
+</html>
